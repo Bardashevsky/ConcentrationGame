@@ -7,21 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F20F33522217BB9001BC526 /* Unicodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F20F33422217BB9001BC526 /* Unicodes.swift */; };
+		4F20F33722219F0F001BC526 /* LeaderBoardParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F20F33622219F0F001BC526 /* LeaderBoardParentClass.swift */; };
+		4F20F33B2221C665001BC526 /* MediumGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F20F33A2221C665001BC526 /* MediumGameViewController.swift */; };
+		4F20F33F2221D225001BC526 /* HardGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F20F33E2221D225001BC526 /* HardGameViewController.swift */; };
+		4F21A5B522280122005B9D21 /* ResultUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F21A5B422280122005B9D21 /* ResultUITabBarController.swift */; };
+		4F21A5B72228082C005B9D21 /* EasyResultUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F21A5B62228082C005B9D21 /* EasyResultUITableViewController.swift */; };
+		4F21A5B922280839005B9D21 /* MediumResultUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F21A5B822280839005B9D21 /* MediumResultUITableViewController.swift */; };
+		4F21A5BE222809BF005B9D21 /* HardResultUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F21A5BD222809BF005B9D21 /* HardResultUITableViewController.swift */; };
 		4F8CA3C62221673300C9E170 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CA3C52221673300C9E170 /* AppDelegate.swift */; };
-		4F8CA3C82221673300C9E170 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CA3C72221673300C9E170 /* ViewController.swift */; };
+		4F8CA3C82221673300C9E170 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CA3C72221673300C9E170 /* MainMenuViewController.swift */; };
 		4F8CA3CB2221673300C9E170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F8CA3C92221673300C9E170 /* Main.storyboard */; };
 		4F8CA3CD2221673400C9E170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F8CA3CC2221673400C9E170 /* Assets.xcassets */; };
 		4F8CA3D02221673400C9E170 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F8CA3CE2221673400C9E170 /* LaunchScreen.storyboard */; };
+		4F8CA3D92221690800C9E170 /* EasyGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CA3D82221690800C9E170 /* EasyGameViewController.swift */; };
+		4FBB4D262226662F0009CD75 /* ConcentrationGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FBB4D242226662F0009CD75 /* ConcentrationGame.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F20F33422217BB9001BC526 /* Unicodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unicodes.swift; sourceTree = "<group>"; };
+		4F20F33622219F0F001BC526 /* LeaderBoardParentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardParentClass.swift; sourceTree = "<group>"; };
+		4F20F33A2221C665001BC526 /* MediumGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumGameViewController.swift; sourceTree = "<group>"; };
+		4F20F33E2221D225001BC526 /* HardGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardGameViewController.swift; sourceTree = "<group>"; };
+		4F21A5B422280122005B9D21 /* ResultUITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultUITabBarController.swift; sourceTree = "<group>"; };
+		4F21A5B62228082C005B9D21 /* EasyResultUITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyResultUITableViewController.swift; sourceTree = "<group>"; };
+		4F21A5B822280839005B9D21 /* MediumResultUITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumResultUITableViewController.swift; sourceTree = "<group>"; };
+		4F21A5BD222809BF005B9D21 /* HardResultUITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HardResultUITableViewController.swift; path = ../HardResultUITableViewController.swift; sourceTree = "<group>"; };
 		4F8CA3C22221673300C9E170 /* ConcentrationGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcentrationGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8CA3C52221673300C9E170 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F8CA3C72221673300C9E170 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F8CA3C72221673300C9E170 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		4F8CA3CA2221673300C9E170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F8CA3CC2221673400C9E170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F8CA3CF2221673400C9E170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F8CA3D12221673400C9E170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F8CA3D82221690800C9E170 /* EasyGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyGameViewController.swift; sourceTree = "<group>"; };
+		4FBB4D252226662F0009CD75 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +55,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F20F33C2221CD95001BC526 /* Difficulty Game */ = {
+			isa = PBXGroup;
+			children = (
+				4F8CA3D82221690800C9E170 /* EasyGameViewController.swift */,
+				4F20F33A2221C665001BC526 /* MediumGameViewController.swift */,
+				4F20F33E2221D225001BC526 /* HardGameViewController.swift */,
+			);
+			path = "Difficulty Game";
+			sourceTree = "<group>";
+		};
+		4F21A5BC22280872005B9D21 /* Resulst */ = {
+			isa = PBXGroup;
+			children = (
+				4F21A5B422280122005B9D21 /* ResultUITabBarController.swift */,
+				4F20F33622219F0F001BC526 /* LeaderBoardParentClass.swift */,
+				4F21A5B62228082C005B9D21 /* EasyResultUITableViewController.swift */,
+				4F21A5B822280839005B9D21 /* MediumResultUITableViewController.swift */,
+				4F21A5BD222809BF005B9D21 /* HardResultUITableViewController.swift */,
+			);
+			path = Resulst;
+			sourceTree = "<group>";
+		};
 		4F8CA3B92221673300C9E170 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +96,26 @@
 		4F8CA3C42221673300C9E170 /* ConcentrationGame */ = {
 			isa = PBXGroup;
 			children = (
-				4F8CA3C52221673300C9E170 /* AppDelegate.swift */,
-				4F8CA3C72221673300C9E170 /* ViewController.swift */,
+				4F8CA3D72221675A00C9E170 /* SystemFiles */,
+				4F20F33C2221CD95001BC526 /* Difficulty Game */,
+				4F21A5BC22280872005B9D21 /* Resulst */,
+				4F20F33422217BB9001BC526 /* Unicodes.swift */,
 				4F8CA3C92221673300C9E170 /* Main.storyboard */,
-				4F8CA3CC2221673400C9E170 /* Assets.xcassets */,
-				4F8CA3CE2221673400C9E170 /* LaunchScreen.storyboard */,
 				4F8CA3D12221673400C9E170 /* Info.plist */,
+				4FBB4D242226662F0009CD75 /* ConcentrationGame.xcdatamodeld */,
 			);
 			path = ConcentrationGame;
+			sourceTree = "<group>";
+		};
+		4F8CA3D72221675A00C9E170 /* SystemFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4F8CA3C52221673300C9E170 /* AppDelegate.swift */,
+				4F8CA3C72221673300C9E170 /* MainMenuViewController.swift */,
+				4F8CA3CC2221673400C9E170 /* Assets.xcassets */,
+				4F8CA3CE2221673400C9E170 /* LaunchScreen.storyboard */,
+			);
+			path = SystemFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +189,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F8CA3C82221673300C9E170 /* ViewController.swift in Sources */,
+				4F21A5B522280122005B9D21 /* ResultUITabBarController.swift in Sources */,
+				4F20F33B2221C665001BC526 /* MediumGameViewController.swift in Sources */,
+				4F21A5B72228082C005B9D21 /* EasyResultUITableViewController.swift in Sources */,
+				4F8CA3C82221673300C9E170 /* MainMenuViewController.swift in Sources */,
+				4F20F33722219F0F001BC526 /* LeaderBoardParentClass.swift in Sources */,
+				4F8CA3D92221690800C9E170 /* EasyGameViewController.swift in Sources */,
+				4F21A5B922280839005B9D21 /* MediumResultUITableViewController.swift in Sources */,
+				4F21A5BE222809BF005B9D21 /* HardResultUITableViewController.swift in Sources */,
+				4FBB4D262226662F0009CD75 /* ConcentrationGame.xcdatamodeld in Sources */,
 				4F8CA3C62221673300C9E170 /* AppDelegate.swift in Sources */,
+				4F20F33522217BB9001BC526 /* Unicodes.swift in Sources */,
+				4F20F33F2221D225001BC526 /* HardGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +400,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4FBB4D242226662F0009CD75 /* ConcentrationGame.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4FBB4D252226662F0009CD75 /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 4FBB4D252226662F0009CD75 /* CoreDataModel.xcdatamodel */;
+			path = ConcentrationGame.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4F8CA3BA2221673300C9E170 /* Project object */;
 }
