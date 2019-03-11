@@ -73,14 +73,14 @@ class MainMenuViewController: UIViewController {
     }
     func loadGameViewCintroller(identifierVC: String) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: identifierVC)
-        self.present(controller, animated: true, completion: nil)
+        weak var controller = storyboard.instantiateViewController(withIdentifier: identifierVC)
+        self.present(controller!, animated: true, completion: nil)
     }
     //MARK: - Leader List Button
     @objc func handleButtonLeaderBoard() {
         let vc = ResultUITabBarController()
         //vc.restorationIdentifier = "name"
-        let rootVC = UINavigationController(rootViewController: vc)
+        let rootVC = UINavigationController(rootViewController: vc.initWithDismis(mainVC: true))
         present(rootVC, animated: true, completion: nil)
     }
 

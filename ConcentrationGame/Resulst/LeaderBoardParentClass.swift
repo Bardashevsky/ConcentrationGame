@@ -20,23 +20,26 @@ class LeaderBoardParentClass: UITableViewController {
         
         self.tableView.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         
-        getData()
+        newPlayerNew = getData()
+        newPlayerNew = newPlayerNew.sorted { $0.highscore < $1.highscore }
         
         self.tableView.reloadData()
         
     }
-    
+    deinit {
+        print("Controller has been deallocated")
+    }
     //MARK: - Get CoreData Data
-    func getData() {
+    func getData() -> [NewPlayerHighscore] {
         
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        
+        context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        var result = [NewPlayerHighscore]()
         do {
-            let result = try context.fetch(NewPlayerHighscore.fetchRequest())
-            self.newPlayerNew = result as? [NewPlayerHighscore]
+            result = try context.fetch(NewPlayerHighscore.fetchRequest())
         } catch let error as NSError {
             print("Could not load data: \(error)")
         }
+        return result
     }
     
 
@@ -55,10 +58,7 @@ class LeaderBoardParentClass: UITableViewController {
         let identifire = "cell"
         var cell = tableView.dequeueReusableCell(withIdentifier: identifire)
         
-        let sortedArray = newArray.sorted { (s1, s2) -> Bool in
-            return s2.highscore > s1.highscore
-        }
-        let persona = sortedArray[indexPath.row]
+        let persona = newArray[indexPath.row]
         if cell == nil {
             cell = UITableViewCell.init(style: UITableViewCell.CellStyle.value1, reuseIdentifier: identifire)
         }

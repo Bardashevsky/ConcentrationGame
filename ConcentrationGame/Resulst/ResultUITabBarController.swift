@@ -10,6 +10,13 @@ import UIKit
 
 class ResultUITabBarController: UITabBarController {
     
+    var isMainVCLoad = false
+    
+    func initWithDismis(mainVC: Bool) -> ResultUITabBarController {
+        isMainVCLoad = mainVC
+        return self
+    }
+    
     var firstTableViewController: EasyResultUITableViewController?
     var secondTableViewController: MediumResultUITableViewController?
     var thirdTableViewController: HardResultUITableViewController?
@@ -49,8 +56,17 @@ class ResultUITabBarController: UITabBarController {
         self.selectedIndex = 0
         self.selectedViewController = firstTableViewController
     }
+    deinit {
+        print("Controller has been deallocated")
+    }
     @objc func backToMainMenu() {
-        present(MainMenuViewController(), animated: true, completion: nil)
+        
+        if isMainVCLoad == true {
+            dismiss(animated: true, completion: nil)
+        } else {
+            present(MainMenuViewController(), animated: true, completion: nil)
+        }
+        
     }
     
 }

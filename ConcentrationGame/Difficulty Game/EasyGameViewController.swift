@@ -42,6 +42,9 @@ class EasyGameViewController: UIViewController {
         addAnimalsFunction()
         editStyle(ofSize: 70)
     }
+    deinit {
+        print("Controller has been deallocated")
+    }
     
     //MARK: - Actions
     @IBAction func menuButtonAction(_ sender: UIButton) {
@@ -121,6 +124,7 @@ class EasyGameViewController: UIViewController {
                 let destinationVC = ResultUITabBarController()
                 destinationVC.selectedIndex = selectedIndex
                 let navVC = UINavigationController(rootViewController: destinationVC)
+                //self.navigationController?.popToViewController(navVC, animated: true)
                 self.present(navVC, animated: true, completion: nil)
                 
             }
